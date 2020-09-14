@@ -1,10 +1,17 @@
 package com.ice
 
 fun main() {
-//    println("Hello kotlin")
-//    Human().hello()
+    var s:String? = "abcde"
+    s = null
+    println(s?.length)
+    println(s?.get(3))
+    println(s?.substring(3))
     val h = Human(weight = 63.8f, height = 1.8f)
     println(h.bmi())
+    val score = 88
+    println(score > 80)
+    val c : Char = 'A'
+    println(c.toInt() > 60)
     /*var age = 19
     age = 20
     var weight  = 66.3
