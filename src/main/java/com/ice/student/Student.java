@@ -13,6 +13,7 @@ public class Student {
         this.math = math;
     }
     public int highest(){
+
 //        int max =  ;
         /*if(english > math){
             max = english;
@@ -44,7 +45,7 @@ public class Student {
             default:
                 grading = 'F';
         }
-
+        System.out.println("\t" + grading);
         /*if (getAverage() >= 90 && getAverage() <= 99){
             grading = 'A';
         }else if (getAverage() >= 80 && getAverage() <= 89){
@@ -54,7 +55,7 @@ public class Student {
         }else if (getAverage() >= 60 && getAverage() <= 69){
             grading = 'D';
         }*/
-        System.out.println("\t" + grading);
+
         /*if (getAverage() >= 60){
             System.out.println("\tPASS");
         }else{

@@ -4,16 +4,32 @@ import java.util.*
 
 fun main() {
 //    userInput()
+
     Student.pass = 50
     val stu = Student("ice", 87, 69)
     val stu1 = Student("ice", 60, 40)
     val stu2 = Student("ice", 33, 34)
+    val gstu = GraduateStudent("eee", 60,50,60)
+    gstu.print()
     stu.print()
     stu1.print()
     stu2.print()
     println("High score: ${stu.highest()}")
 }
-class Student (var name: String?, var english: Int, var math: Int){
+
+class GraduateStudent(name: String?, english: Int, math: Int, var thesis: Int) : Student(name, english, math) {
+    companion object{
+        var pass = 70
+    }
+
+    override fun print() {
+        println("$name\t$english\t$math\t$thesis\t${gatAverage()}\t${passOrFailed()}\t${grading()}")
+    }
+
+    override fun passOrFailed() = if (gatAverage() >= pass) "PASS" else "FAILED"
+}
+
+open class Student (var name: String?, var english: Int, var math: Int){
     companion object{
         @JvmStatic
         var pass = 60
@@ -21,7 +37,7 @@ class Student (var name: String?, var english: Int, var math: Int){
             println("Testing")
         }
     }
-    fun print(){
+    open fun print(){
         println("$name\t$english\t$math\t${gatAverage()}\t${passOrFailed()}\t${grading()}")
     }
     fun grading() = when (gatAverage()){
@@ -31,7 +47,7 @@ class Student (var name: String?, var english: Int, var math: Int){
         in 60..69 -> 'D'
         else -> 'F'
     }
-    fun passOrFailed() = if (gatAverage() >= pass) "PASS" else "FAILED"
+    open fun passOrFailed() = if (gatAverage() >= pass) "PASS" else "FAILED"
     fun gatAverage() = (english+math)/2
 
     fun highest() = if (english > math){

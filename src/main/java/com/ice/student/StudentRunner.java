@@ -10,6 +10,8 @@ public class StudentRunner {
         Student stu = new Student("ice", 90, 10);
         Student stu1 = new Student("icC", 20, 60);
         Student stu2 = new Student("CCC", 90, 80);
+        GraduateStudent gstu = new GraduateStudent("AAA", 60, 60, 60);
+        gstu.print();
         stu.print();
         stu1.print();
         stu2.print();
