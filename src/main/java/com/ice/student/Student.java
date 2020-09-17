@@ -1,12 +1,11 @@
 package com.ice.student;
 
-import javax.sound.midi.Soundbank;
-
 public class Student {
     String name;
     String id;
     int math;
     int english;
+    static int pass = 60;
 
     public Student(String name, int english , int math) {
         this.name = name;
@@ -26,7 +25,7 @@ public class Student {
         int average = getAverage();
         System.out.print(name + "\t" + english + "\t" + math + "\t" +
                 getAverage() + "\t" +
-                ((average >= 60) ? "PASS" : "FAILED"));
+                ((average >= pass) ? "PASS" : "FAILED"));
         char grading = 'F';
         switch (average/10){
             case 10:
