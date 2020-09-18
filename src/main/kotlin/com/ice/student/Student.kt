@@ -40,7 +40,7 @@ open class Student (var name: String?, var english: Int, var math: Int){
     open fun print(){
         println("$name\t$english\t$math\t${gatAverage()}\t${passOrFailed()}\t${grading()}")
     }
-    fun grading() = when (gatAverage()){
+    internal fun grading() = when (gatAverage()){
         in 90..100 -> 'A'
         in 80..89 -> 'B'
         in 70..79 -> 'C'

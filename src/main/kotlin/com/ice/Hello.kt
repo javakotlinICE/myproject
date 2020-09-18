@@ -1,6 +1,10 @@
 package com.ice
 
+import com.ice.kotlin.Student
+
 fun main() {
+    val student = Student ("ice", 60, 60)
+
     var s:String? = "abcde"
     s = null
     println(s?.length)
