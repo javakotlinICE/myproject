@@ -1,0 +1,6 @@
+Kotlin是一種在Java虛擬機上執行的靜態型別程式語言，它也可以被編譯成為JavaScript原始碼。
+它主要是由俄羅斯聖彼得堡的JetBrains開發團隊所發展出來的程式語言，其名稱來自於聖彼得堡附近
+的科特林島。[3]2012年1月，著名期刊《Dr. Dobb's Journal》中Kotlin被認定為該月的最佳語言。
+[4]雖然與Java語法並不相容，但在JVM環境中Kotlin被設計成可以和Java程式碼相互運作，並可以重複
+使用如Java集合框架等的現有Java參照的函式庫。Hathibelagal寫道，「如果你正在為Android開發尋
+找一種替代程式語言，那麼應該試下Kotlin。它很容易在Android專案中替代Java或者同Java一起使用。」

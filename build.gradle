@@ -17,6 +17,10 @@ dependencies {
     testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.7.0'
 }
 
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }

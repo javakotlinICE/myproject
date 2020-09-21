@@ -1,11 +1,9 @@
 package com.ice;
 
 
-import com.ice.kotlin.Student;
 
 public class Hello {
     public static void main (String[] args){
-        Student stu = new Student("ice", 60, 69);
 
 //        System.out.println("Hello world");
         String s = "abcde";
