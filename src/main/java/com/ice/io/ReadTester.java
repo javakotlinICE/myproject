@@ -2,7 +2,7 @@ package com.ice.io;
 
 import java.io.*;
 
-public class Tester {
+public class ReadTester {
     public static void main(String[] args) {
         try {
             BufferedReader br = new BufferedReader(new FileReader("data.txt"));
